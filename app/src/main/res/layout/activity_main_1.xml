@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+
+        <LinearLayout
+            android:id="@+id/day_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tripple1_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tripple2_2"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tripple3_3"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tripple4_4" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center_horizontal|right"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_location"
+            android:background="@drawable/tripple_circle"/>
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/day_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="122dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:columnCount="4"
+            android:rowCount="1"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_1"
+                android:onClick="onClick"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_columnWeight="2"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/tripple_background"
+                android:text="day1"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:onClick="onClick"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_columnWeight="2"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/tripple_background"
+                android:text="day2"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_3"
+                android:onClick="onClick"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_columnWeight="2"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/tripple_background"
+                android:text="day3"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_4"
+                android:onClick="onClick"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_columnWeight="2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/tripple_background"
+                android:text="day4"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </GridLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+        <ImageView
+            android:id="@+id/profile_1"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="20dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/ic_heart" />
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/profile_1"
+            android:paddingLeft="10dp"
+            android:text="우동야 고에빵"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_1"
+            android:layout_toRightOf="@+id/profile_1"
+            android:paddingLeft="10dp"
+            android:text="직장인은 물론 학생들에게 인기있는 저\n렴한 맛집"
+            android:textColor="#ddd"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_2"
+            android:layout_toRightOf="@+id/profile_1"
+            android:paddingLeft="10dp"
+            android:text="음식점: 학키타"
+            android:textColor="#ddd"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
